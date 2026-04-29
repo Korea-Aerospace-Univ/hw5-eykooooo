@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdbool.h>
 #include <stdio.h>
 
 int main(void)
@@ -26,7 +27,5 @@ int main(void)
 		printf("none");
 	}
 
-	return 0;
-}
 	return 0;
 }
