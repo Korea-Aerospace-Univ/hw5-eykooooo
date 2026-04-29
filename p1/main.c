@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdbool.h>
 #include <stdio.h>
 
 int main(void)
@@ -10,7 +9,7 @@ int main(void)
 	scanf("%d", &N);
 
 	for (a = 1; a <= N / 900; a++) {
-		for (b = 2; b <= N / 750; b++) {
+		for (b = 2; b <= N / 750; b+=2) {
 			for (c = 1; c <= N / 200; c++) {
 
 				if (a * 900 + b * 750 + c * 200 == N) {
@@ -23,9 +22,11 @@ int main(void)
 		}
 	}
 
-	if (found == false) {
+	if (!found) {
 		printf("none");
 	}
 
+	return 0;
+}
 	return 0;
 }
